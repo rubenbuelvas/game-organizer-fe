@@ -1,9 +1,17 @@
+export interface Project {
+    id: number;
+    name: string;
+    players: Player[];
+    families: Family[];
+    teams: Team[];
+    games: Game[];
+}
+
 export interface Player {
     id: number;
     name: string;
     skills: Skills;
     stats: PlayerStats;
-    team: Team;
 }
 
 export interface Skills {
